@@ -6,13 +6,21 @@
 
 class wxIPAddress : public wxControl
 {
-    public:
-        wxIPAddress();
-        virtual ~wxIPAddress();
+public:
+    wxIPAddress(){Init();};
+    virtual ~wxIPAddress();
+    bool Create(wxWindow *parent, wxWindowID id = wxID_ANY, const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize,
+                long style = 0, const wxValidator valid = wxDefaultValidator, const wxString& name = wxControlNameStr) ;
 
-    protected:
+    wxIPAddress(wxWindow *parent, wxWindowID id = wxID_ANY, const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize,
+                long style = 0, const wxValidator valid = wxDefaultValidator, const wxString& name = wxControlNameStr) {Init(); Create(parent);};
 
-    private:
+    bool Init() ;
+    wxSize DoGetBestSize() ;
+
+protected:
+
+private:
 };
 
 #endif // WXIPADDRESS_H

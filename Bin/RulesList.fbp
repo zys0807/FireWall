@@ -12,7 +12,7 @@
         <property name="encoding">UTF-8</property>
         <property name="event_generation">connect</property>
         <property name="file">RulesList</property>
-        <property name="first_id">1000</property>
+        <property name="first_id">2000</property>
         <property name="help_provider">none</property>
         <property name="internationalize">1</property>
         <property name="name">RulesList</property>
@@ -277,7 +277,7 @@
                                 <property name="font"></property>
                                 <property name="gripper">0</property>
                                 <property name="hidden">0</property>
-                                <property name="id">wxID_ANY</property>
+                                <property name="id">ID_BTN_START_STOP_SERVICE</property>
                                 <property name="label">启动服务</property>
                                 <property name="max_size"></property>
                                 <property name="maximize_button">0</property>
@@ -335,7 +335,7 @@
                         </object>
                         <object class="sizeritem" expanded="1">
                             <property name="border">5</property>
-                            <property name="flag">wxALL</property>
+                            <property name="flag">wxALL|wxEXPAND</property>
                             <property name="proportion">0</property>
                             <object class="wxButton" expanded="1">
                                 <property name="BottomDockable">1</property>
@@ -365,7 +365,7 @@
                                 <property name="font"></property>
                                 <property name="gripper">0</property>
                                 <property name="hidden">0</property>
-                                <property name="id">wxID_ANY</property>
+                                <property name="id">ID_BTN_RULE_UP</property>
                                 <property name="label">规则上移</property>
                                 <property name="max_size"></property>
                                 <property name="maximize_button">0</property>
@@ -423,7 +423,7 @@
                         </object>
                         <object class="sizeritem" expanded="1">
                             <property name="border">5</property>
-                            <property name="flag">wxALL</property>
+                            <property name="flag">wxALL|wxEXPAND</property>
                             <property name="proportion">0</property>
                             <object class="wxButton" expanded="1">
                                 <property name="BottomDockable">1</property>
@@ -453,7 +453,7 @@
                                 <property name="font"></property>
                                 <property name="gripper">0</property>
                                 <property name="hidden">0</property>
-                                <property name="id">wxID_ANY</property>
+                                <property name="id">ID_BTN_RULE_DOWN</property>
                                 <property name="label">规则下移</property>
                                 <property name="max_size"></property>
                                 <property name="maximize_button">0</property>
@@ -541,7 +541,7 @@
                                 <property name="font"></property>
                                 <property name="gripper">0</property>
                                 <property name="hidden">0</property>
-                                <property name="id">wxID_ANY</property>
+                                <property name="id">ID_BTN_ADD_RULE</property>
                                 <property name="label">增加规则...</property>
                                 <property name="max_size"></property>
                                 <property name="maximize_button">0</property>
@@ -629,7 +629,7 @@
                                 <property name="font"></property>
                                 <property name="gripper">0</property>
                                 <property name="hidden">0</property>
-                                <property name="id">wxID_ANY</property>
+                                <property name="id">ID_BTN_MODIFT_RULES</property>
                                 <property name="label">修改规则...</property>
                                 <property name="max_size"></property>
                                 <property name="maximize_button">0</property>
@@ -717,7 +717,7 @@
                                 <property name="font"></property>
                                 <property name="gripper">0</property>
                                 <property name="hidden">0</property>
-                                <property name="id">wxID_ANY</property>
+                                <property name="id">ID_BTN_DEL_RULE</property>
                                 <property name="label">删除规则</property>
                                 <property name="max_size"></property>
                                 <property name="maximize_button">0</property>
@@ -805,7 +805,7 @@
                                 <property name="font"></property>
                                 <property name="gripper">0</property>
                                 <property name="hidden">0</property>
-                                <property name="id">wxID_ANY</property>
+                                <property name="id">ID_BTN_SETTINGS</property>
                                 <property name="label">设置...</property>
                                 <property name="max_size"></property>
                                 <property name="maximize_button">0</property>
@@ -893,7 +893,7 @@
                                 <property name="font"></property>
                                 <property name="gripper">0</property>
                                 <property name="hidden">0</property>
-                                <property name="id">wxID_ANY</property>
+                                <property name="id">ID_BTN_EXIT</property>
                                 <property name="label">退出</property>
                                 <property name="max_size"></property>
                                 <property name="maximize_button">0</property>
@@ -1052,12 +1052,12 @@
                         <property name="checked">0</property>
                         <property name="enabled">1</property>
                         <property name="help"></property>
-                        <property name="id">wxID_ANY</property>
+                        <property name="id">ID_FILE_OPEN</property>
                         <property name="kind">wxITEM_NORMAL</property>
-                        <property name="label">MyMenuItem</property>
-                        <property name="name">m_menuItem2</property>
+                        <property name="label">打开规则文件(&amp;O)...</property>
+                        <property name="name">miFile_Open</property>
                         <property name="permission">none</property>
-                        <property name="shortcut"></property>
+                        <property name="shortcut">Ctrl+O</property>
                         <property name="unchecked_bitmap"></property>
                         <event name="OnMenuSelection"></event>
                         <event name="OnUpdateUI"></event>
@@ -1067,25 +1067,29 @@
                         <property name="checked">0</property>
                         <property name="enabled">1</property>
                         <property name="help"></property>
-                        <property name="id">wxID_ANY</property>
+                        <property name="id">ID_FILE_SAVE</property>
                         <property name="kind">wxITEM_NORMAL</property>
-                        <property name="label">MyMenuItem</property>
-                        <property name="name">m_menuItem3</property>
+                        <property name="label">保存规则文件(&amp;S)...</property>
+                        <property name="name">miFile_Save</property>
                         <property name="permission">none</property>
-                        <property name="shortcut"></property>
+                        <property name="shortcut">Ctrl+S</property>
                         <property name="unchecked_bitmap"></property>
                         <event name="OnMenuSelection"></event>
                         <event name="OnUpdateUI"></event>
+                    </object>
+                    <object class="separator" expanded="1">
+                        <property name="name">m_separator2</property>
+                        <property name="permission">none</property>
                     </object>
                     <object class="wxMenuItem" expanded="1">
                         <property name="bitmap"></property>
                         <property name="checked">0</property>
                         <property name="enabled">1</property>
                         <property name="help"></property>
-                        <property name="id">wxID_ANY</property>
+                        <property name="id">ID_FILE_EXIT</property>
                         <property name="kind">wxITEM_NORMAL</property>
-                        <property name="label">MyMenuItem</property>
-                        <property name="name">m_menuItem4</property>
+                        <property name="label">退出(&amp;E)</property>
+                        <property name="name">miFile_Exit</property>
                         <property name="permission">none</property>
                         <property name="shortcut"></property>
                         <property name="unchecked_bitmap"></property>
@@ -1102,10 +1106,45 @@
                         <property name="checked">0</property>
                         <property name="enabled">1</property>
                         <property name="help"></property>
-                        <property name="id">wxID_ANY</property>
+                        <property name="id">ID_EDIT_ADDRULE</property>
                         <property name="kind">wxITEM_NORMAL</property>
-                        <property name="label">MyMenuItem</property>
-                        <property name="name">m_menuItem5</property>
+                        <property name="label">增加规则...</property>
+                        <property name="name">miEdit_AddRule</property>
+                        <property name="permission">none</property>
+                        <property name="shortcut">Ctrl+A</property>
+                        <property name="unchecked_bitmap"></property>
+                        <event name="OnMenuSelection"></event>
+                        <event name="OnUpdateUI"></event>
+                    </object>
+                    <object class="wxMenuItem" expanded="1">
+                        <property name="bitmap"></property>
+                        <property name="checked">0</property>
+                        <property name="enabled">1</property>
+                        <property name="help"></property>
+                        <property name="id">ID_EDIT_DELRULE</property>
+                        <property name="kind">wxITEM_NORMAL</property>
+                        <property name="label">删除规则...</property>
+                        <property name="name">miEdit_DelRule</property>
+                        <property name="permission">none</property>
+                        <property name="shortcut">Ctrl+D</property>
+                        <property name="unchecked_bitmap"></property>
+                        <event name="OnMenuSelection"></event>
+                        <event name="OnUpdateUI"></event>
+                    </object>
+                </object>
+                <object class="wxMenu" expanded="1">
+                    <property name="label">工具(&amp;T)</property>
+                    <property name="name">m_menu4</property>
+                    <property name="permission">protected</property>
+                    <object class="wxMenuItem" expanded="1">
+                        <property name="bitmap"></property>
+                        <property name="checked">0</property>
+                        <property name="enabled">1</property>
+                        <property name="help"></property>
+                        <property name="id">ID_TOOLS_START_STOP_SERVICE</property>
+                        <property name="kind">wxITEM_NORMAL</property>
+                        <property name="label">启动服务</property>
+                        <property name="name">miTool_Start_Service</property>
                         <property name="permission">none</property>
                         <property name="shortcut"></property>
                         <property name="unchecked_bitmap"></property>
@@ -1117,10 +1156,29 @@
                         <property name="checked">0</property>
                         <property name="enabled">1</property>
                         <property name="help"></property>
-                        <property name="id">wxID_ANY</property>
+                        <property name="id">ID_TOOLS_START_STOP_SERVICE</property>
                         <property name="kind">wxITEM_NORMAL</property>
-                        <property name="label">MyMenuItem</property>
-                        <property name="name">m_menuItem6</property>
+                        <property name="label">停止服务</property>
+                        <property name="name">miTool_StopService</property>
+                        <property name="permission">none</property>
+                        <property name="shortcut"></property>
+                        <property name="unchecked_bitmap"></property>
+                        <event name="OnMenuSelection"></event>
+                        <event name="OnUpdateUI"></event>
+                    </object>
+                    <object class="separator" expanded="1">
+                        <property name="name">m_separator1</property>
+                        <property name="permission">none</property>
+                    </object>
+                    <object class="wxMenuItem" expanded="1">
+                        <property name="bitmap"></property>
+                        <property name="checked">0</property>
+                        <property name="enabled">1</property>
+                        <property name="help"></property>
+                        <property name="id">ID_TOOLS_SETTINGS</property>
+                        <property name="kind">wxITEM_NORMAL</property>
+                        <property name="label">设置...</property>
+                        <property name="name">miTool_Settings</property>
                         <property name="permission">none</property>
                         <property name="shortcut"></property>
                         <property name="unchecked_bitmap"></property>
@@ -1137,12 +1195,12 @@
                         <property name="checked">0</property>
                         <property name="enabled">1</property>
                         <property name="help"></property>
-                        <property name="id">wxID_ANY</property>
+                        <property name="id">ID_HELP_HELP</property>
                         <property name="kind">wxITEM_NORMAL</property>
-                        <property name="label">MyMenuItem</property>
-                        <property name="name">m_menuItem7</property>
+                        <property name="label">帮助...</property>
+                        <property name="name">miHelp_Help</property>
                         <property name="permission">none</property>
-                        <property name="shortcut"></property>
+                        <property name="shortcut">F1</property>
                         <property name="unchecked_bitmap"></property>
                         <event name="OnMenuSelection"></event>
                         <event name="OnUpdateUI"></event>
@@ -1152,10 +1210,10 @@
                         <property name="checked">0</property>
                         <property name="enabled">1</property>
                         <property name="help"></property>
-                        <property name="id">wxID_ANY</property>
+                        <property name="id">ID_HELP_ABOUT</property>
                         <property name="kind">wxITEM_NORMAL</property>
-                        <property name="label">MyMenuItem</property>
-                        <property name="name">m_menuItem8</property>
+                        <property name="label">关于...</property>
+                        <property name="name">miHelp_About</property>
                         <property name="permission">none</property>
                         <property name="shortcut"></property>
                         <property name="unchecked_bitmap"></property>
