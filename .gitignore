@@ -1,2 +1,8 @@
 
 *.pdb
+Bin/wxIPAddress/wxIPAddress.layout
+*.exe
+*.manifest
+*.layout
+*.obj
+*.layout
