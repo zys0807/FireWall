@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "Parser.h"
-#include "../Inc/Rules.h"
+#include "Rules.h"
 
 
 //#define _FLEX_DEBUG_ 

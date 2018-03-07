@@ -3,7 +3,7 @@
 %{
 #include<stdio.h>
 #include"Lexer.h"
-#include "../Inc/Rules.h"
+#include "Rules.h"
 
 #ifndef MAX_PATH
 #define MAX_PATH 260

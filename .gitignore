@@ -6,3 +6,15 @@ Bin/wxIPAddress/wxIPAddress.layout
 *.layout
 *.obj
 *.layout
+fwbin/Debug/vc141.idb
+fwbin/Debug/fwbin.tlog/fwbin.lastbuildstate
+fwbin/Debug/fwbin.Build.CppClean.log
+*.log
+fwbin/Debug/fwbin.Build.CppClean.log
+fwbin/Debug/fwbin.log
+fwbin/Debug/fwbin.tlog/CL.command.1.tlog
+fwbin/Debug/fwbin.tlog/CL.read.1.tlog
+fwbin/Debug/fwbin.tlog/CL.write.1.tlog
+fwbin/Debug/fwbin.tlog/fwbin.lastbuildstate
+fwbin/Debug/fwbin.tlog/unsuccessfulbuild
+fwbin/Debug/vc141.idb
