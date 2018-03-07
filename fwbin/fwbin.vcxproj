@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Lex.l">
+    <Flex Include="Lex.l">
       <FileType>Document</FileType>
-    </CustomBuild>
-    <None Include="Parser.y" />
+    </Flex>
+    <Bison Include="Parser.y">
+      <FileType>Document</FileType>
+    </Bison>
     <None Include="Rules.r" />
   </ItemGroup>
   <ItemGroup>
@@ -31,6 +33,7 @@
     <ClCompile Include="Rules.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Inc\Include.h" />
     <ClInclude Include="Lexer.h" />
     <ClInclude Include="Parser.h" />
   </ItemGroup>
@@ -70,7 +73,6 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
     <Import Project="D:\win_flex_bison-latest\custom_build_rules\win_flex_bison_custom_build.props" />
-    <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -105,6 +107,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>__WXMSW__;__WXDEBUG__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>wxbase31ud_net.lib;wxmsw31ud_html.lib;wxbase31ud_xml.lib;wxmsw31ud_adv.lib;wxmsw31ud_aui.lib;wxmsw31ud_gl.lib;wxmsw31ud_media.lib;wxmsw31ud_propgrid.lib;wxmsw31ud_qa.lib;wxmsw31ud_ribbon.lib;wxmsw31ud_richtext.lib;wxmsw31ud_stc.lib;wxmsw31ud_xrc.lib;wxscintillad.lib;wxmsw31ud_core.lib;wxbase31ud.lib;wxtiffd.lib;wxjpegd.lib;wxpngd.lib;wxzlibd.lib;wxexpatd.lib;winmm.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;odbc32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -152,6 +155,5 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="D:\win_flex_bison-latest\custom_build_rules\win_flex_bison_custom_build.targets" />
-    <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.targets" />
   </ImportGroup>
 </Project>

@@ -1,4 +1,5 @@
 #include "../Inc/Rules.h"
+#include "..\Inc\Rules.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

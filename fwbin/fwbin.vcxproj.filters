@@ -15,7 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Parser.y" />
     <None Include="Rules.r" />
   </ItemGroup>
   <ItemGroup>
@@ -36,8 +35,14 @@
     <ClInclude Include="Parser.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\Inc\Include.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Lex.l" />
+    <Flex Include="Lex.l" />
+  </ItemGroup>
+  <ItemGroup>
+    <Bison Include="Parser.y" />
   </ItemGroup>
 </Project>
