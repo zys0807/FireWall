@@ -1,0 +1,8 @@
+﻿  Building 'fw' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping Debug\fw.inf [Version] section with DriverVer=03/07/2018,12.47.12.942
+  Done Adding Additional Store
+  
+  Number of errors: 1
+  
+SIGNTASK : SignTool error : File not found: C:\Users\yong.liang\Desktop\FireWall\Debug\fw.sys
+  
