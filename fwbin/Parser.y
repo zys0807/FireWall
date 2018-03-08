@@ -10,7 +10,7 @@
 #endif
 
 #define _BISON_DEBUG_PRINT_
-#define _BISON_DEBUG_
+//#define _BISON_DEBUG_
 
 #ifdef _BISON_DEBUG_PRINT_ 
 #define BisonPrint printf

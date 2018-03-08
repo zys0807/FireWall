@@ -28,14 +28,20 @@
     <None Include="Rules.r" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="App.cpp" />
     <ClCompile Include="Lexer.c" />
     <ClCompile Include="Parser.c" />
     <ClCompile Include="Rules.c" />
+    <ClCompile Include="RulesList.cpp" />
+    <ClCompile Include="RulesListGui.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Inc\Include.h" />
+    <ClInclude Include="App.h" />
     <ClInclude Include="Lexer.h" />
     <ClInclude Include="Parser.h" />
+    <ClInclude Include="RulesList.h" />
+    <ClInclude Include="RulesListGui.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

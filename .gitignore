@@ -18,3 +18,5 @@ fwbin/Debug/fwbin.tlog/CL.write.1.tlog
 fwbin/Debug/fwbin.tlog/fwbin.lastbuildstate
 fwbin/Debug/fwbin.tlog/unsuccessfulbuild
 fwbin/Debug/vc141.idb
+*.tlog
+*.log
